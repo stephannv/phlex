@@ -2,6 +2,7 @@
 
 require "erb"
 require "set"
+require_relative "phlex/version"
 
 module Phlex
 	autoload :ArgumentError, "phlex/errors/argument_error"
