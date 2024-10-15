@@ -220,6 +220,8 @@ class Phlex::SGML
 			end
 		when String
 			plain(renderable)
+		when SafeObject
+			raw(renderable)
 		when nil
 			__yield_content__(&) if block_given?
 		else
